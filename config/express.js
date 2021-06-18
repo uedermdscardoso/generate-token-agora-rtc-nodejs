@@ -11,6 +11,7 @@ module.exports = () => {
   // MIDDLEWARES
   app.use(bodyParser.json());
 
+  require('../api/routes/HomeRoute')(app);
   require('../api/routes/TokenRoute')(app);
 
   /*app.listen(controller.PORT, () => {
